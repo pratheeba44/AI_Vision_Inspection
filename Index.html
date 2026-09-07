@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Vision Inspection</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>AI Vision Inspection</h1>
+            <p>Mechanical Component Inspection & Measurement</p>
+        </header>
+
+        <main>
+
+            <!-- Camera -->
+            <section class="camera-section">
+
+                <h2>Camera</h2>
+
+                <video id="camera" autoplay playsinline></video>
+
+                <canvas id="canvas"></canvas>
+
+                <div class="buttons">
+
+                    <button id="startCamera">
+                        📷 Start Camera
+                    </button>
+
+                    <button id="capture">
+                        Capture
+                    </button>
+
+                    <button id="liveScan">
+                        🔴 Live Scan
+                    </button>
+
+                </div>
+
+            </section>
+
+
+            <!-- Captured Image -->
+
+            <section class="image-section">
+
+                <h2>Captured Component</h2>
+
+                <img id="capturedImage" alt="Captured image">
+
+            </section>
+
+
+            <!-- Inspection -->
+
+            <section class="inspection-section">
+
+                <h2>Inspection</h2>
+
+                <button id="inspect">
+                    🔍 Inspect Component
+                </button>
+
+                <div id="result">
+
+                    <p>
+                        Component:
+                        <span id="component">---</span>
+                    </p>
+
+                    <p>
+                        Length:
+                        <span id="length">---</span>
+                    </p>
+
+                    <p>
+                        Width:
+                        <span id="width">---</span>
+                    </p>
+
+                    <p>
+                        Diameter:
+                        <span id="diameter">---</span>
+                    </p>
+
+                    <p>
+                        Calibration:
+                        <span id="calibration">---</span>
+                    </p>
+
+                    <p>
+                        Confidence:
+                        <span id="confidence">---</span>
+                    </p>
+
+                    <h3>
+                        Result:
+                        <span id="status">---</span>
+                    </h3>
+
+                </div>
+
+            </section>
+
+
+            <!-- Report -->
+
+            <section class="report-section">
+
+                <h2>Inspection Report</h2>
+
+                <button id="generateReport">
+                    📄 Generate PDF Report
+                </button>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <p>AI Vision Inspection Prototype</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
